@@ -26,6 +26,16 @@
   width: 200px;
 }
 
+.checkout-header .checkout-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  color: rgb(8, 79, 45);
+  font-weight: 700;
+  font-size: 15px;
+}
+
 .checkout-header .logo {
   height: 26px;
   margin-top: 0px;

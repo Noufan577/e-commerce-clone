@@ -27,9 +27,11 @@ export function CheckoutPage({ cart }) {
             <div className="checkout-header">
                 <div className="header-content">
                     <div className="checkout-header-left-section">
-                        <a href="/">
-                            <img className="logo" src="images/logo.png" />
-                            <img className="mobile-logo" src="images/mobile-logo.png" />
+                        <a href="/" className="checkout-logo-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM5.17 5H2V3H0v2h2l3.6 7.59L4.25 15c-.16.28-.25.61-.25.95A2 2 0 0 0 6 18h14v-2H6.42c-.14 0-.25-.11-.25-.25l.03-.12L7.1 14h9.45a2 2 0 0 0 1.75-1.03l3.58-6.49A1 1 0 0 0 21 5H5.17z"/>
+                            </svg>
+                            <span>Ecommerce app</span>
                         </a>
                     </div>
 
