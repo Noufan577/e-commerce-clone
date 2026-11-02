@@ -2,20 +2,16 @@ import './HomePage.css'
 import { Header } from '../components/Header'
 
 import { products } from '../../starting-code/data/products'
-import { resolvePath } from 'react-router'
+
+import axios from 'axios'
 
 
 export function HomePage() {
 
-    fetch ('http://localhost:3000/api/products')
+    axios.get('http://localhost:3000/api/products')
         .then((response)=>{
-            response.json().then((data)=>{
-                console.log(data);
-            });
-        }
-
-        )
-
+            console.log(response.data);
+        })
     return (
         <>
             <title>ECommerce Project</title>
@@ -33,19 +29,19 @@ export function HomePage() {
                                 </div>
 
                                 <div className="product-name limit-text-to-2-lines">
-                                   {product.name}
+                                    {product.name}
                                 </div>
 
                                 <div className="product-rating-container">
                                     <img className="product-rating-stars"
-                                        src={`images/ratings/rating-${product.rating.stars *10}.png`} />
+                                        src={`images/ratings/rating-${product.rating.stars * 10}.png`} />
                                     <div className="product-rating-count link-primary">
                                         {product.rating.count}
                                     </div>
                                 </div>
 
                                 <div className="product-price">
-                                    ${(product.priceCents /100).toFixed(2)}
+                                    ${(product.priceCents / 100).toFixed(2)}
                                 </div>
 
                                 <div className="product-quantity-container">
