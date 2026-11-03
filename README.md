@@ -1,4 +1,6 @@
-# 🛒 E-Commerce Clone
+# 🛒 NexShop — E-Commerce Clone
+
+**🌐 Live Demo → [e-commerce-clone-k77i.onrender.com](https://e-commerce-clone-k77i.onrender.com/)**
 
 A full-stack e-commerce web application built with **React** (frontend) and **Node.js/Express/SQLite** (backend). Deployed as a single service on [Render](https://render.com).
 
