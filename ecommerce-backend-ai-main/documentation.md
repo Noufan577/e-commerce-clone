@@ -167,7 +167,7 @@ Returns all orders, sorted by most recent first.
 Creates a new order from the current cart items.
 
 **Response:**
-```js
+```jsjj
 {
   "id": "uuid",
   "orderTimeMs": "number",
