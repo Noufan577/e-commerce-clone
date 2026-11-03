@@ -18,7 +18,7 @@ export function Orders({ cart }) {
 
     return (
         <>
-            <title>Orders</title>
+            <title>Orders — NexShop</title>
 
             <Header cart={cart} />
 

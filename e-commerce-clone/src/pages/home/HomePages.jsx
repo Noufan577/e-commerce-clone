@@ -18,10 +18,14 @@ export function HomePage({cart,loadCart}) {
 
     return (
         <>
-            <title>ECommerce Project</title>
+            <title>NexShop — Premium Store</title>
 
             <Header cart={cart}/>
             <div className="home-page">
+                <div className="home-hero">
+                    <h1>Shop the Future,<br/>Delivered Today</h1>
+                    <p>Thousands of premium products at unbeatable prices.</p>
+                </div>
                 <ProductGrid products={products} loadCart={loadCart}/>
             </div>
         </>
